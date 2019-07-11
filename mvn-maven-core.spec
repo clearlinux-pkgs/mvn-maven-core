@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-core
 Version  : 2.0.6
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
@@ -16,8 +16,10 @@ Source6  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.2.1/mave
 Source7  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
 Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.jar
 Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
-Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.jar
-Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.jar
+Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -69,11 +71,17 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.0
 cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.0
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
-cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
 
 
 %files
@@ -91,5 +99,7 @@ cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/3.0/maven-core-3.0.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
+/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.pom
