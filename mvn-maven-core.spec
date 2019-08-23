@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-core
 Version  : 2.0.6
-Release  : 5
+Release  : 6
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
