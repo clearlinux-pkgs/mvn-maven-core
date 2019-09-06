@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-core
 Version  : 2.0.6
-Release  : 9
+Release  : 10
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.1/maven-core-2.0.1.jar
@@ -32,13 +32,13 @@ Source22  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.0/maven
 Source23  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
 Source24  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
 Source25  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
-Source26  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.jar
-Source27  : https://repo1.maven.org/maven2/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: mvn-maven-core-data = %{version}-%{release}
 Requires: mvn-maven-core-license = %{version}-%{release}
+BuildRequires : apache-maven
+BuildRequires : buildreq-mvn
 
 %description
 No detailed description available
@@ -145,12 +145,6 @@ cp %{SOURCE24} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9
 cp %{SOURCE25} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
-cp %{SOURCE26} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.jar
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0
-cp %{SOURCE27} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.pom
-
 
 %files
 %defattr(-,root,root,-)
@@ -183,8 +177,6 @@ cp %{SOURCE27} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
-/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.jar
-/usr/share/java/.m2/repository/org/apache/maven/maven-core/3.6.0/maven-core-3.6.0.pom
 
 %files license
 %defattr(0644,root,root,0755)
